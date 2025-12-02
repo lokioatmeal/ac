@@ -89,10 +89,10 @@ module.exports = function(eleventyConfig) {
     // -----------------------------------------------
     return {
         dir: {
-        input: "src",        // All your content lives in the src/ folder
-        includes: "_includes", // Layouts and partials are in src/_includes
-        data: "_data",        // Optional data folder (if you create it)
-        output: "public"      // Build the site into public/
+            input: "src",        // All your content lives in the src/ folder
+            includes: "_includes", // Layouts and partials are in src/_includes
+            data: "_data",        // Optional data folder (if you create it)
+            output: "public"      // Build the site into public/
         }
     };
 };
