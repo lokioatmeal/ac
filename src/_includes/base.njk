@@ -11,10 +11,6 @@
     <body>
         {% include "header.njk" %}
         <main>
-            {% for name in collections %}
-            <pre>{{ name }}</pre>
-            {% endfor %}
-
             {{ content | safe }}
         </main>
         {% include "footer.njk" %}
