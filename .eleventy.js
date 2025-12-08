@@ -11,7 +11,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("characters", (collectionApi) => {
-    // return collectionApi.getFilteredByGlob("src/characters/*.md");
     return collectionApi.getFilteredByTag("characters");
   });
 
@@ -19,10 +18,10 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: "src",
       includes: "_includes",
-      output: "_site",
+      output: "_site"
     },
     templateFormats: ["njk", "md", "html"],
     markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
+    htmlTemplateEngine: "njk"
   };
 };

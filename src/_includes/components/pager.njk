@@ -6,17 +6,22 @@
   {% set prev = items[index - 1] if index > 0 else null %}
   {% set next = items[index + 1] if index + 1 < items | length else null %}
 
-  <nav>
-    {% if prev %}
-      <a class="pager__prev" href="{{ prev.url }}">
-        ← {{ prev.data.title }}
-      </a>
-    {% endif %}
+  <nav class="d-flex flex-row gap-2">
 
-    {% if next %}
-      <a class="pager__next" href="{{ next.url }}">
-        {{ next.data.title }} →
-      </a>
+    {% if prev %}
+    <a class="d-flex flex-row gap-2 btn btn-outline-dark text-nowrap" href="{{ prev.url }}">
+      <i class="bi bi-arrow-left-short" aria-hidden="true"></i>
+      {{ prev.data.title }}
+    </a>
     {% endif %}
+    
+    {% if next %}
+    <a class="d-flex flex-row gap-2 btn btn-outline-dark text-nowrap" href="{{ next.url }}">
+      {{ next.data.title }}
+      <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+    </a>
+    {% endif %}
+  
   </nav>
+
 {% endif %}

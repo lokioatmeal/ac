@@ -1,10 +1,11 @@
 <header>
-  ⚔️
-  <nav>
-    <ul>
-      {% for entry in collections.all | eleventyNavigation %}
-      <li class="{% if entry.url == page.url %}is-active{% endif %}"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
-      {% endfor %}
-    </ul>
+  <nav class="navbar">
+    <div class="container">
+      <ul class="navbar-nav flex-row gap-3">
+        {% for entry in collections.all | eleventyNavigation %}
+        <li class="nav-item"><a class="nav-link {% if entry.url == page.url %}active{% endif %}" href="{{ entry.url }}">{{ entry.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
   </nav>
 </header>

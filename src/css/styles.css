@@ -1,27 +1,27 @@
 body {
-    font-family: Garamond;
+  font-family: Garamond;
 }
 .header {
-    padding: 10px;
-    text-align: center;
-    background: #E4CFCB;
-    color: black;
+  padding: 10px;
+  text-align: center;
+  background: #e4cfcb;
+  color: black;
 }
 .header h1 {
-    font-size: 40px
+  font-size: 40px;
 }
 .navbar {
-    overflow: hidden;
-    background-color:lightcyan
+  overflow: hidden;
+  background-color: lightcyan;
 }
 .navbar a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: None;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: None;
 }
 .navbar a:hover {
-    background-color: #E4CFCB;
+  background-color: #e4cfcb;
 }

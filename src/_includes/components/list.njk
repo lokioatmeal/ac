@@ -1,12 +1,8 @@
 {% set collectionName = listCollection or "characters" %}
 {% set items = collections[collectionName] or [] %}
 
-{% if listTitle %}
-  <h2>{{ listTitle }}</h2>
-{% endif %}
-
-<ul>
+<ul class="list-unstyled">
   {% for item in items %}
-  <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+  <li class="py-1"><a href="{{ item.url }}">{{ item.data.title }}</a></li>
   {% endfor %}
 </ul>

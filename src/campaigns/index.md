@@ -8,4 +8,8 @@ eleventyNavigation:
 
 # {{ title }}
 
-- [Dragonlance](/campaigns/dragonlance/)
+<ul class="list-unstyled">
+
+  <li class="py-1"><a href="/campaigns/dragonlance/">Dragonlance<a></li>
+
+</ul>
