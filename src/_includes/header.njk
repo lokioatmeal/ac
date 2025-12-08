@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Armor Class Dot Com!</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <div class="header">
-            <h1>Armor Class Dot Com!</h1>
-            <p>Somehow no one has tried to take this from us yet. Neat!</p>
-        </div>
-
-        <div class="navbar">
-            <a href="/">Home</a>
-            <a href="/campaign_log/">Campaign Log</a>
-            <a href="/jackal/">Jackal!</a>
-            <a href="/miracle/">Miracle</a>
-            <a href="/debug/">Debug</a>
-        </div>
-    </head>
-</html>
+<header>
+  ⚔️
+  <nav>
+    <ul>
+      {% for entry in collections.all | eleventyNavigation %}
+      <li class="{% if entry.url == page.url %}is-active{% endif %}"><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

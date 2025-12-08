@@ -3,10 +3,14 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "serve": "npx @11ty/eleventy --serve"
+    "dev": "npx @11ty/eleventy --serve",
+    "format": "prettier . --write"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.7.4"
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^1.0.4"

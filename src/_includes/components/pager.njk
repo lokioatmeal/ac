@@ -1,0 +1,22 @@
+{% set collectionName = pagerCollection or "dragonlance" %}
+{% set items = collections[collectionName] or [] %}
+{% set index = items | getCollectionItemIndex(page) %}
+
+{% if index >= 0 %}
+  {% set prev = items[index - 1] if index > 0 else null %}
+  {% set next = items[index + 1] if index + 1 < items | length else null %}
+
+  <nav>
+    {% if prev %}
+      <a class="pager__prev" href="{{ prev.url }}">
+        ← {{ prev.data.title }}
+      </a>
+    {% endif %}
+
+    {% if next %}
+      <a class="pager__next" href="{{ next.url }}">
+        {{ next.data.title }} →
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}
