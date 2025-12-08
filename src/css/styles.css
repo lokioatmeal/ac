@@ -1,27 +1,49 @@
-body {
-    font-family: Garamond;
+/* body {
+  font-family: Garamond;
 }
 .header {
-    padding: 10px;
-    text-align: center;
-    background: #E4CFCB;
-    color: black;
+  padding: 10px;
+  text-align: center;
+  background: #e4cfcb;
+  color: black;
 }
 .header h1 {
-    font-size: 40px
+  font-size: 40px;
 }
 .navbar {
-    overflow: hidden;
-    background-color:lightcyan
+  overflow: hidden;
+  background-color: lightcyan;
 }
 .navbar a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: None;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: None;
 }
 .navbar a:hover {
-    background-color: #E4CFCB;
+  background-color: #e4cfcb;
+} */
+
+h1 {
+  --bs-heading-color: var(--bs-red);
+  font-size: calc(var(--bs-body-font-size) * 5);
+  margin: 0 -0.5rem;
+  line-height: 0.875;
+  letter-spacing: -0.5rem;
+}
+
+/* h1, */
+.ewert-regular {
+  font-family: "Ewert", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+.nosifer-regular {
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
