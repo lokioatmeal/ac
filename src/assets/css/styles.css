@@ -18,6 +18,7 @@ Perhaps a Utility’s inherent use of `!important` makes this unnecessary?
     --bs-body-color: var(--bs-orange);
     --bs-body-bg: var(--bs-black);
     --bs-heading-color: var(--bs-warning);
+    --bs-link-color-rgb: unset;
 
     /* New Theme-specific CSS Custom Properties to extend Bootstrap theming. */
     /* Never done it quite like this … Reevaluate later. */
@@ -37,6 +38,7 @@ Perhaps a Utility’s inherent use of `!important` makes this unnecessary?
   /* Ovveride existing Bootstrap component styles for theming. */
   /* Could—maybe should 🤷 —move Component-level theming/overrides to its own layer. */
   .navbar-nav {
+    z-index: 2; /* Dumb… just to liftabove h1 because of its negative margin-top. */
     --bs-nav-link-color: var(--bs-orange);
   }
 }
@@ -44,12 +46,12 @@ Perhaps a Utility’s inherent use of `!important` makes this unnecessary?
 h1,
 h2 {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   font-family: var(--ac-heading-font);
   font-weight: var(--ac-heading-weight);
   font-size: calc(var(--bs-body-font-size) * 5);
-  margin: var(--ac-heading-margin-x) var(--ac-heading-margin-y);
-  line-height: var(--ac-heading-line-height);
+  /* margin: var(--ac-heading-margin-x) var(--ac-heading-margin-y); */
+  /* line-height: var(--ac-heading-line-height); */
   letter-spacing: var(--ac-heading-letter-spacing);
 }
 
